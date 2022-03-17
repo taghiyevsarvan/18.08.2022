@@ -30,7 +30,7 @@ namespace ConsoleApp5
 
             Department antikCargo = new Department(3);
             antikCargo.Name = "Antik Iness Cargo";
-            antikCargo.EmployeeLimit = 2;
+            antikCargo.EmployeeLimit = 3;
 
             try
             {
@@ -45,9 +45,9 @@ namespace ConsoleApp5
             }
 
             Console.WriteLine("==========Bizim Isciler==========");
-            foreach (var item in antikCargo.Employee)
+            foreach (var item in antikCargo.employee)
             {
-                Console.WriteLine($"Ad: {item.Name} - Soyad: {item.Surname} - Maas: {item.Salary} ");
+                Console.WriteLine($"Ad: {item.Name} Soyad: {item.Surname} Maas: {item.Salary}");
             }
 
 
